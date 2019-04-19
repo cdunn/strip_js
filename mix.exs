@@ -34,7 +34,7 @@ defmodule StripJs.Mixfile do
   defp deps do
     [
       {:floki, "~> 0.21.0"},
-      {:html_entities, "~> 0.4"},
+      {:html_entities, github: "cdunn/html_entities", branch: "encode_once", override: true},
       {:ex_spec, "~> 2.0", only: :test},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:dialyxir, ">= 0.0.0", only: :dev},

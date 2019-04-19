@@ -214,7 +214,7 @@ defmodule StripJs do
   ## Performs good-enough HTML escaping to prevent HTML entity attacks.
   @spec html_escape(String.t) :: String.t
   defp html_escape(html) do
-    HtmlEntities.encode(html)
+    HtmlEntities.encode_once(html)
   end
 
   ## Parses the given HTML into an `t:html_tree/0` structure.
